@@ -505,7 +505,7 @@ parameters:
         1: GPS
         2: Range sensor
         3: Vision
-      default: 1
+      default: 3
       reboot_required: true
     EKF2_BARO_CTRL:
       description:
@@ -514,7 +514,7 @@ parameters:
           barometric height measurements to estimate its height in addition to other
           height sources (if activated).
       type: boolean
-      default: 1
+      default: 0
     EKF2_EV_CTRL:
       description:
         short: External vision (EV) sensor aiding
@@ -526,7 +526,7 @@ parameters:
         1: Vertical position
         2: 3D velocity
         3: Yaw
-      default: 15
+      default: 11
       min: 0
       max: 15
     EKF2_GPS_CTRL:
@@ -566,7 +566,7 @@ parameters:
         0: Disable range fusion
         1: Enabled (conditional mode)
         2: Enabled
-      default: 1
+      default: 0
     EKF2_TERR_MASK:
       description:
         short: Integer bitmask controlling fusion sources of the terrain estimator
